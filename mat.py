@@ -1,5 +1,16 @@
-import numpy
+import matplotlib.pyplot as plt
+import numpy as np
 
-arr = numpy.array([1, 2, 3, 4, 5])
+xpoints = np.array([1, 2, 6, 8])
+ypoints = np.array([3, 8, 1, 10])
 
-print(arr)
+plt.plot(xpoints, ypoints,  'o--y')
+
+plt.title('Hello there', loc ='left')
+plt.xlabel("Average Pulse")
+plt.ylabel("Calorie Burnage")
+
+
+plt.grid()
+
+plt.show()
