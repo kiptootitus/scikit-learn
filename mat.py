@@ -10,7 +10,7 @@ plt.title('Hello there', loc='left')
 plt.xlabel("Average Pulse")
 plt.ylabel("Calorie Burnage")
 
-plt.bar(xpoints, ypoints, width = 0.1)
+plt.bar(xpoints, ypoints, width=0.1)
 
 plt.show()
 
@@ -26,5 +26,27 @@ plt.scatter(x, y)
 x = np.array([2, 2, 8, 1, 15, 8, 12, 9, 7, 3, 11, 4, 7, 14, 12])
 y = np.array([100, 105, 84, 105, 90, 99, 90, 95, 94, 100, 79, 112, 91, 80, 85])
 plt.scatter(x, y)
+
+plt.show()
+
+
+# Numpy functions
+import numpy as np
+
+arr = np.array([1, 2, 3, 4])
+
+print(arr[0])
+import numpy as np
+
+arr = np.array([1, 2, 3, 4], ndmin=5)
+
+print(arr)
+print('number of dimensions :', arr.ndim)
+
+from numpy import random
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+sns.distplot(random.exponential(size=1000), hist=False)
 
 plt.show()
