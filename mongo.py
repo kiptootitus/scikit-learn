@@ -36,9 +36,24 @@ mydoc = mycol.find().sort("name")
 for x in mydoc:
   print(x)
 
-#query
+# #query
 
-myquery = { "address": "Apple st 652" }
+# myquery = { "address": "Apple st 652" }
 
-# delete 
-mycol.delete_one(myquery)
+# # delete 
+# mycol.delete_one(myquery)
+
+# # updating values in a document
+# myquery = { "address": "Valley 345" }
+
+# newvalues = { "$set": { "address": "Canyon 123" } }
+
+# mycol.update_one(myquery, newvalues)
+
+# for x in mycol.find():
+#     print(x)
+
+myresult = mycol.find().limit(5)
+
+for x in myresult:
+  print(x)
