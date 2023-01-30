@@ -27,6 +27,18 @@ mycol = db["code"]
 #   { "_id": 14, "name": "Viola", "address": "Sideway 1633"}
 # ]
 
- x = mycol.insert_many(myList)
+#  x = mycol.insert_many(myList)
 
-print(x.inserted_ids)
+# print(x.inserted_ids)
+
+mydoc = mycol.find().sort("name")
+
+for x in mydoc:
+  print(x)
+
+#query
+
+myquery = { "address": "Apple st 652" }
+
+# delete 
+mycol.delete_one(myquery)
