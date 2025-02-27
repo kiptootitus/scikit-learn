@@ -5,8 +5,10 @@ name = "pypi"
 
 [packages]
 scikit-learn = "*"
+notebook = "*"
 
 [dev-packages]
+ipykernel = "*"
 
 [requires]
 python_version = "3.12"
